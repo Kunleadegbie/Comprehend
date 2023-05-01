@@ -9,7 +9,7 @@ import boto3
 import json
 
 comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
-text = "I am a highly motivated and detail-oriented Cloud Architect with over 3 years of experience in designing, deploying, and managing cloud-based solutions for small and medium-sized enterprises. Possessing strong analytical and problem-solving skills, with a proven track record of delivering successful projects on time and within budget"
+text = "I am a highly motivated and detail-oriented Cloud Architect with over 3 years of experience in designing, deploying, and managing cloud-based solutions for small and medium-sized enterprises. Posséder de solides compétences en analyse et en résolution de problèmes, avec une expérience éprouvée dans la réalisation de projets réussis dans les délais et dans les limites du budget"
 
 print("Calling DetectDominantLanguage")
 print(json.dumps(comprehend.detect_dominant_language(Text = text), sort_keys=True, indent=4))
